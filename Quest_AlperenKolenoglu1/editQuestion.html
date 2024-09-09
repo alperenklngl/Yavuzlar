@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Soru Düzenle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <h2>Mevcut Sorulari Düzenle</h2>
+        <select id="question-list">
+            <option value="" disabled selected>Bir soru seçin</option>
+        </select>
+        
+        <input type="text" id="edit-question" placeholder="Soruyu düzenle" />
+        <input type="text" id="edit-answer1" placeholder="Cevap 1" />
+        <input type="text" id="edit-answer2" placeholder="Cevap 2" />
+        <input type="text" id="edit-answer3" placeholder="Cevap 3" />
+        <input type="text" id="edit-answer4" placeholder="Cevap 4" />
+        
+        <select id="edit-correct-answer">
+            <option value="0">Cevap 1</option>
+            <option value="1">Cevap 2</option>
+            <option value="2">Cevap 3</option>
+            <option value="3">Cevap 4</option>
+        </select>
+        
+        <select id="edit-difficulty">
+            <option value="easy">Ez</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        
+        <button id="update-question-btn">Soruyu Güncelle</button>
+    </div>
+    <script src="editQuestion.js"></script>
+</body>
+</html>
